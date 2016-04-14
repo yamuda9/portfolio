@@ -42,7 +42,7 @@ body.landing {
     bottom: 0px;
     height: 100%;
     width: 67%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.35);
     border: 1px solid black;
     overflow: auto;
 }
@@ -53,7 +53,7 @@ body.landing {
     bottom: 0px;
     height: 100%;
     width: 33%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.35);
     border-top: 1px solid black;
     border-right: 1px solid black;
     border-bottom: 1px solid black;
