@@ -13,13 +13,15 @@ var hideNavbar = function() {
 };
 
 var fadeTitle = function() {
-    $('.main-content .main-title').fadeIn(2250);
+    $('.main-content .main-title .main-title-name').fadeIn(2250);
+    $('.main-content .main-title .main-title-title').fadeIn(2750);
 };
 
 $(window).ready(function() {
     $('.navbar .about').hide();
     $('.navbar .works').hide();
-    $('.main-content .main-title').hide();
+    $('.main-content .main-title .main-title-name').hide();
+    $('.main-content .main-title .main-title-title').hide();
     
     fadeTitle();
     

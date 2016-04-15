@@ -1,31 +1,36 @@
-body.landing {
-    background-color: rgb(50,50,50);
-}
-
-.main-content {
-    position: fixed;
-    min-height: 100%;
-    width: 100%;
-    background-image: url(../assets/images/bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-}
-
 .main-content .main-title {
     position: absolute;
-    top: 15%;
+    width: 100%;
+    top: 10%;
+    height: 18%;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0px rgb(50,50,50);
+}
+
+.main-content .main-title .main-title-name {
+    position: relative;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    width: 100%;
-    text-align: center;
+    width: inherit;
     font-size: 100px;
-    font-weight: 700;
-    text-transform: uppercase;
     letter-spacing: 14px;
-    text-shadow: 2px 2px 0px rgb(50,50,50);
+}
+
+.main-content .main-title .main-title-title {
+    position: relative;
+    bottom: 89%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: inherit;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 14px;
 }
 
 .navbar {
@@ -38,12 +43,13 @@ body.landing {
 
 .navbar .works {
     position: absolute;
-    left: 0px;
+    right: 0px;
     bottom: 0px;
     height: 100%;
     width: 67%;
     background-color: rgba(0,0,0,0.35);
-    border: 1px solid black;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
     overflow: auto;
 }
 
@@ -58,19 +64,18 @@ body.landing {
 
 .navbar .about {
     position: absolute;
-    right: 0px;
+    left: 0px;
     bottom: 0px;
     height: 100%;
     width: 33%;
     background-color: rgba(0,0,0,0.35);
     border-top: 1px solid black;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
 }
 
 .about .about-title {
     position: absolute;
-    top: 30%;
+    top: 50%;
+    margin: auto;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
