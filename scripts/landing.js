@@ -1,5 +1,11 @@
 var navbarState = 0; // 0 = hidden, 1 = shown
 
+var fadeTitle = function() {
+    $('.main-content .main-title .main-title-name').fadeIn(2250);
+    $('.main-content .main-title .main-title-title').fadeIn(2750);
+    $('.lower-indicator').fadeIn(2750);
+};
+
 var showNavbar = function() {
     navbarState = 1;
     $('.navbar .about').slideDown("fast");
@@ -12,9 +18,14 @@ var hideNavbar = function() {
     $('.navbar .works').fadeOut("slow");
 };
 
-var fadeTitle = function() {
-    $('.main-content .main-title .main-title-name').fadeIn(2250);
-    $('.main-content .main-title .main-title-title').fadeIn(2750);
+var hideIndicator = function() {
+    $('.lower-indicator').fadeOut("fast");
+};
+
+var showIndicator = function() {
+    setTimeout(function() {
+        $('.lower-indicator').fadeIn("slow");
+    }, 1000);
 };
 
 $(window).ready(function() {
@@ -22,12 +33,14 @@ $(window).ready(function() {
     $('.navbar .works').hide();
     $('.main-content .main-title .main-title-name').hide();
     $('.main-content .main-title .main-title-title').hide();
+    $('.lower-indicator').hide();
     
     fadeTitle();
     
     $('.navbar').on("mouseover", function() {
         if (navbarState == 0) {
             showNavbar();
+            hideIndicator();
         }
     });
     
@@ -36,6 +49,7 @@ $(window).ready(function() {
             setTimeout(function() {
                 hideNavbar();
             }, 500);
+            showIndicator();
         }
     });
     
@@ -43,7 +57,7 @@ $(window).ready(function() {
         function scrollHorizontally(e) {
             e = window.event || e;
             var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
-            document.getElementById('scrollThis').scrollLeft -= (delta*70); // Multiplied by 70
+            document.getElementById('scrollThis').scrollLeft -= (delta*85); // Multiplied by 85
             e.preventDefault();
         }
         if (document.getElementById('scrollThis').addEventListener) {

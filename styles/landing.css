@@ -34,6 +34,7 @@
 }
 
 .navbar {
+    z-index: 1;
     position: fixed;
     left: 0px;
     bottom: 0px;
@@ -84,8 +85,18 @@
     width: 100%;
     text-align: center;
     font-size: 75px;
-    font-weight: 400;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 10px;
     text-shadow: 2px 2px 0px rgb(50,50,50);
 }
+
+.lower-indicator {
+    position: fixed;
+    bottom: 9%;
+    width: 100%;
+    text-align: center;
+    color: rgb(255,255,255);
+    text-shadow: 2px 2px 0px rgb(50,50,50);
+    font-size: 120px;
+ }
