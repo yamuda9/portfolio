@@ -1,5 +1,13 @@
 var navbarState = 0; // 0 = hidden, 1 = shown
 
+var startState = function() {
+    $('.navbar .about').hide();
+    $('.navbar .works').hide();
+    $('.main-content .main-title .main-title-name').hide();
+    $('.main-content .main-title .main-title-title').hide();
+    $('.lower-indicator').hide();
+};
+
 var fadeTitle = function() {
     $('.main-content .main-title .main-title-name').fadeIn(2250);
     $('.main-content .main-title .main-title-title').fadeIn(2750);
@@ -29,12 +37,7 @@ var showIndicator = function() {
 };
 
 $(window).ready(function() {
-    $('.navbar .about').hide();
-    $('.navbar .works').hide();
-    $('.main-content .main-title .main-title-name').hide();
-    $('.main-content .main-title .main-title-title').hide();
-    $('.lower-indicator').hide();
-    
+    startState();    
     fadeTitle();
     
     $('.navbar').on("mouseover", function() {
