@@ -8,8 +8,8 @@ var showNavbar = function() {
 
 var hideNavbar = function() {
     navbarState = 0;
-    $('.navbar .about').slideUp("slow");
-    $('.navbar .works').slideUp("slow");
+    $('.navbar .about').fadeOut("slow");
+    $('.navbar .works').fadeOut("slow");
 };
 
 var fadeTitle = function() {
@@ -33,7 +33,27 @@ $(window).ready(function() {
     
     $('.navbar').on("mouseleave", function() {
         if (navbarState == 1) {
-            hideNavbar();
+            setTimeout(function() {
+                hideNavbar();
+            }, 500);
         }
     });
+    
+    (function() {
+        function scrollHorizontally(e) {
+            e = window.event || e;
+            var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+            document.getElementById('scrollThis').scrollLeft -= (delta*70); // Multiplied by 70
+            e.preventDefault();
+        }
+        if (document.getElementById('scrollThis').addEventListener) {
+            // IE9, Chrome, Safari, Opera
+            document.getElementById('scrollThis').addEventListener("mousewheel", scrollHorizontally, false);
+            // Firefox
+            document.getElementById('scrollThis').addEventListener("DOMMouseScroll", scrollHorizontally, false);
+        } else {
+            // IE 6/7/8
+            document.getElementById('scrollThis').attachEvent("onmousewheel", scrollHorizontally);
+        }
+    })();
 });
