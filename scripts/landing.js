@@ -8,7 +8,7 @@ var startState = function() {
     $('.lower-indicator').hide();
 };
 
-var fadeTitle = function() {
+var fadeTitleIn = function() {
     $('.main-content .main-title .main-title-name').fadeIn(2250);
     $('.main-content .main-title .main-title-title').fadeIn(2750);
     $('.lower-indicator').fadeIn(2750);
@@ -38,7 +38,7 @@ var showIndicator = function() {
 
 $(window).ready(function() {
     startState();    
-    fadeTitle();
+    fadeTitleIn();
     
     $('.navbar').on("mouseover", function() {
         if (navbarState == 0) {
@@ -56,21 +56,19 @@ $(window).ready(function() {
         }
     });
     
-    (function() {
-        function scrollHorizontally(e) {
-            e = window.event || e;
-            var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
-            document.getElementById('scrollThis').scrollLeft -= (delta*85); // Multiplied by 85
-            e.preventDefault();
-        }
-        if (document.getElementById('scrollThis').addEventListener) {
-            // IE9, Chrome, Safari, Opera
-            document.getElementById('scrollThis').addEventListener("mousewheel", scrollHorizontally, false);
-            // Firefox
-            document.getElementById('scrollThis').addEventListener("DOMMouseScroll", scrollHorizontally, false);
-        } else {
-            // IE 6/7/8
-            document.getElementById('scrollThis').attachEvent("onmousewheel", scrollHorizontally);
-        }
-    })();
+    function scrollHorizontally(e) {
+        e = window.event || e;
+        var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+        document.getElementById('scrollThis').scrollLeft -= (delta*85); // Multiplied by 85
+        e.preventDefault();
+    };
+    if (document.getElementById('scrollThis').addEventListener) {
+        // IE9, Chrome, Safari, Opera
+        document.getElementById('scrollThis').addEventListener("mousewheel", scrollHorizontally, false);
+        // Firefox
+        document.getElementById('scrollThis').addEventListener("DOMMouseScroll", scrollHorizontally, false);
+    } else {
+        // IE 6/7/8
+        document.getElementById('scrollThis').attachEvent("onmousewheel", scrollHorizontally);
+    };
 });
