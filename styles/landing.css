@@ -1,6 +1,9 @@
 .main-content .main-title {
     position: absolute;
-    width: 100%;
+    width: 500px;
+    max-width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
     top: 10%;
     height: 18%;
     text-align: center;
@@ -15,7 +18,6 @@
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    width: inherit;
     font-size: 100px;
     letter-spacing: 14px;
 }
@@ -27,10 +29,12 @@
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    width: inherit;
-    text-align: center;
     font-size: 25px;
     letter-spacing: 14px;
+}
+
+.main-content .main-title:hover {
+    cursor: pointer;
 }
 
 .navbar {
