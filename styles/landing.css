@@ -1,4 +1,5 @@
 .main-content .main-title {
+    z-index: 1;
     position: absolute;
     width: 500px;
     max-width: 100%;
@@ -37,6 +38,46 @@
     cursor: pointer;
 }
 
+.main-content .main-about {
+    position: absolute;
+    width: 900px;
+    max-width: 95%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 25px;
+    top: 33%;
+    text-shadow: 2px 2px 0px rgb(50,50,50);
+    background-color: rgba(0,0,0,0.30);
+    padding: 20px;
+}
+
+.main-content .main-about .main-about-close {
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    font-size: 20px;
+    color: rgba(255,255,255,0.8)
+}
+
+.main-content .main-about .main-about-close:hover {
+    cursor: pointer;
+}
+
+.main-content .main-about .main-about-bio {
+    position: relative;
+    margin-top: 5px;
+    text-align: justify;
+}
+
+.main-content .main-about .main-social {
+    text-align: center;
+    font-size: 33px;
+}
+
+.main-content .main-about .main-social .main-social-icons {
+    letter-spacing: 10px;
+}
+
 .navbar {
     z-index: 1;
     position: fixed;
@@ -51,10 +92,8 @@
     right: 0px;
     bottom: 0px;
     height: 83%;
-    width: 67%;
+    width: 100%;
     background-color: rgba(0,0,0,0.35);
-    border-top: 1px solid black;
-    border-left: 1px solid black;
     overflow: hidden;
 }
 
@@ -71,38 +110,6 @@
 
 .navbar .works .examples:hover {
     opacity: 1;
-}
-
-.navbar .about {
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    height: 83%;
-    width: 33%;
-    background-color: rgba(0,0,0,0.35);
-    border-top: 1px solid black;
-    opacity: 0.75;
-}
-
-.navbar .about:hover {
-    opacity: 1;
-}
-
-.about .about-title {
-    position: absolute;
-    top: 50%;
-    margin: auto;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    width: 100%;
-    text-align: center;
-    font-size: 75px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    text-shadow: 2px 2px 0px rgb(50,50,50);
 }
 
 .lower-indicator {

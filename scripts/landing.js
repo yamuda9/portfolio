@@ -1,11 +1,11 @@
 var navbarState = 0; // 0 = hidden, 1 = shown
 
 var startState = function() {
-    $('.navbar .about').hide();
     $('.navbar .works').hide();
     $('.main-content .main-title .main-title-name').hide();
     $('.main-content .main-title .main-title-title').hide();
     $('.lower-indicator').hide();
+    $('.main-about').hide();
 };
 
 var fadeTitleIn = function() {
@@ -16,13 +16,11 @@ var fadeTitleIn = function() {
 
 var showNavbar = function() {
     navbarState = 1;
-    $('.navbar .about').slideDown("fast");
     $('.navbar .works').slideDown("fast");
 };
 
 var hideNavbar = function() {
     navbarState = 0;
-    $('.navbar .about').fadeOut("slow");
     $('.navbar .works').fadeOut("slow");
 };
 
@@ -54,6 +52,16 @@ $(window).ready(function() {
             }, 500);
             showIndicator();
         }
+    });
+    
+    $('.main-content .main-title').on("click", function() {
+        $(this).fadeOut("slow");
+        $('.main-content .main-about').fadeIn("slow");
+    });
+    
+    $('.main-content .main-about .main-about-close').on("click", function() {
+        $('.main-content .main-about').fadeOut("slow");
+        $('.main-content .main-title').fadeIn("slow");
     });
     
     function scrollHorizontally(e) {
