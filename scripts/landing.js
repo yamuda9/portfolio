@@ -1,4 +1,5 @@
 var navbarState = 0; // 0 = hidden, 1 = shown
+var $currentMainContent = $('.main-content .main-title');
 
 var startState = function() {
     $('.navbar .works').hide();
@@ -6,6 +7,7 @@ var startState = function() {
     $('.main-content .main-title .main-title-title').hide();
     $('.lower-indicator').hide();
     $('.main-about').hide();
+    $('.main-works').hide();
 };
 
 var fadeTitleIn = function() {
@@ -35,6 +37,7 @@ var showIndicator = function() {
 };
 
 $(window).ready(function() {
+    $currentMainContent = $('.main-content .main-title');
     startState();    
     fadeTitleIn();
     
@@ -55,12 +58,63 @@ $(window).ready(function() {
     });
     
     $('.main-content .main-title').on("click", function() {
-        $(this).fadeOut("slow");
+        $currentMainContent.fadeOut("slow");
+        $currentMainContent = $('.main-content .main-about');
         $('.main-content .main-about').fadeIn("slow");
     });
     
     $('.main-content .main-about .main-about-close').on("click", function() {
-        $('.main-content .main-about').fadeOut("slow");
+        $currentMainContent.fadeOut("slow");
+        $currentMainContent = $('.main-content .main-title');
+        $('.main-content .main-title').fadeIn("slow");
+    });
+    
+    $('.navbar .works .examples .nav-bloc-jams').on("click", function() {
+        $currentMainContent.fadeOut("slow");
+        $currentMainContent = $('.main-content .main-bloc-jams');
+        $('.main-content .main-bloc-jams').fadeIn("slow");
+        $('.main-content .main-works-close').fadeIn("slow");
+    });
+    
+    $('.navbar .works .examples .nav-blocipedia').on("click", function() {
+        $currentMainContent.fadeOut("slow");
+        $currentMainContent = $('.main-content .main-blocipedia');
+        $('.main-content .main-blocipedia').fadeIn("slow");
+        $('.main-content .main-works-close').fadeIn("slow");
+    });
+    
+    $('.navbar .works .examples .nav-blocmetrics').on("click", function() {
+        $currentMainContent.fadeOut("slow");
+        $currentMainContent = $('.main-content .main-blocmetrics');
+        $('.main-content .main-blocmetrics').fadeIn("slow");
+        $('.main-content .main-works-close').fadeIn("slow");
+    });
+    
+    $('.navbar .works .examples .nav-bloccit').on("click", function() {
+        $currentMainContent.fadeOut("slow");
+        $currentMainContent = $('.main-content .main-bloccit');
+        $('.main-content .main-bloccit').fadeIn("slow");
+        $('.main-content .main-works-close').fadeIn("slow");
+    });
+    
+    $('.navbar .works .examples .nav-open-to-do-api').on("click", function() {
+        $currentMainContent.fadeOut("slow");
+        $currentMainContent = $('.main-content .main-open-to-do-api');
+        $('.main-content .main-open-to-do-api').fadeIn("slow");
+        $('.main-content .main-works-close').fadeIn("slow");
+    });
+    
+    $('.navbar .works .examples .nav-tdd-workflow').on("click", function() {
+        $currentMainContent.fadeOut("slow");
+        $currentMainContent = $('.main-content .main-tdd-workflow');
+        $('.main-content .main-tdd-workflow').fadeIn("slow");
+        $('.main-content .main-works-close').fadeIn("slow");
+    });
+    
+    $('.main-content .main-works-container .main-works-close').on("click", function() {
+        $('.main-content .main-works-close').fadeOut("slow");
+        $currentMainContent.fadeOut("slow");
+        $currentMainContent = $('.main-content .main-title');
         $('.main-content .main-title').fadeIn("slow");
     });
     
