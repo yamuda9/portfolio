@@ -1,7 +1,7 @@
 .main-content .main-title {
     z-index: 1;
     position: absolute;
-    width: 500px;
+    width: 550px;
     max-width: 100%;
     left: 50%;
     transform: translateX(-50%);
@@ -11,6 +11,8 @@
     font-weight: 700;
     text-transform: uppercase;
     text-shadow: 2px 2px 0px rgb(50,50,50);
+    padding-left: 14px;
+    background-color: rgba(0,0,0,0.15);
 }
 
 .main-content .main-title .main-title-name {
@@ -48,7 +50,7 @@
     top: 33%;
     text-shadow: 2px 2px 0px rgb(50,50,50);
     background-color: rgba(0,0,0,0.30);
-    padding: 20px;
+    padding: 5px 20px;
 }
 
 .main-content .main-about .main-about-close {
@@ -65,8 +67,12 @@
 
 .main-content .main-about .main-about-bio {
     position: relative;
-    margin-top: 5px;
     text-align: justify;
+}
+
+.main-content .main-about .interests-container {
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 .main-content .main-about .main-social {
