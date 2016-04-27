@@ -1,5 +1,6 @@
 var navbarState = 0; // 0 = hidden, 1 = shown
 var $currentMainContent = $('.main-content .main-title');
+var mainTitleShown = true;
 
 var startState = function() {
     $('.navbar .works').hide();
@@ -60,12 +61,14 @@ $(window).ready(function() {
     $('.main-content .main-title').on("click", function() {
         $currentMainContent.fadeOut("slow");
         $currentMainContent = $('.main-content .main-about');
+        mainTitleShown = false;
         $('.main-content .main-about').fadeIn("slow");
     });
     
     $('.main-content .main-about .main-about-close').on("click", function() {
         $currentMainContent.fadeOut("slow");
         $currentMainContent = $('.main-content .main-title');
+        mainTitleShown = true;
         $('.main-content .main-title').fadeIn("slow");
     });
     
@@ -75,14 +78,26 @@ $(window).ready(function() {
         $currentMainContent = $('.main-content .' + $mainContentClass);
         $('.main-content .' + $mainContentClass).fadeIn("slow");
         $('.main-content .main-works-close').fadeIn("slow");
+        mainTitleShown = false;
     });
     
     $('.main-content .main-works-container .main-works-close').on("click", function() {
         $('.main-content .main-works-close').fadeOut("slow");
         $currentMainContent.fadeOut("slow");
         $currentMainContent = $('.main-content .main-title');
+        mainTitleShown = true;
         $('.main-content .main-title').fadeIn("slow");
     });
+    
+    $('.main-content .main-content-closer').on("click", function() {
+        if (mainTitleShown == false) {
+            $('.main-content .main-works-close').fadeOut("slow");
+            $currentMainContent.fadeOut("slow");
+            $currentMainContent = $('.main-content .main-title');
+            $('.main-content .main-title').fadeIn("slow");
+            mainTitleShown = true;
+        }
+    })
     
     function scrollHorizontally(e) {
         e = window.event || e;
