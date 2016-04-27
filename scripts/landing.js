@@ -62,6 +62,7 @@ $(window).ready(function() {
     $('.main-content .main-title').on("click", function() {
         $currentMainContent.fadeOut("slow");
         $currentMainContent = $('.main-content .main-about');
+        $mainContentClass = "";
         mainTitleShown = false;
         $('.main-content .main-about').fadeIn("slow");
     });
