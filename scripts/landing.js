@@ -100,6 +100,7 @@ $(window).ready(function() {
             $currentMainContent = $('.main-content .main-title');
             $('.main-content .main-title').fadeIn("slow");
             mainTitleShown = true;
+            $mainContentClass = "";
         }
     })
     
