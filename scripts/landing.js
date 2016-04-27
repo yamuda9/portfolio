@@ -72,7 +72,7 @@ $(window).ready(function() {
         $('.main-content .main-title').fadeIn("slow");
     });
     
-    $('.navbar .works .examples img').on("click", function() {
+    $('.navbar .works .examples').on("click", function() {
         $currentMainContent.fadeOut("slow");
         var $mainContentClass = $(this).data('main-class');
         $currentMainContent = $('.main-content .' + $mainContentClass);

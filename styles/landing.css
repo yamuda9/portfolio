@@ -132,21 +132,36 @@
     height: 83%;
     max-height: 100%;
     width: 100%;
-    background-color: rgba(0,0,0,0.35);
+    background-color: rgba(0,0,0,0.5);
     overflow: hidden;
 }
 
 .navbar .works .examples {
     position: relative;
     display: table-cell;
-    padding-right: 5px;
-    padding-left: 5px;
-    padding-top: 0.5%;
-    opacity: 0.75;
+    height: 100%;
+    width: 300px;
+    text-align: center;
+    padding: 2.7%;
+}
+
+.navbar .works .examples .title {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.navbar .works .examples .description {
+    font-size: 25px;
+}
+
+.navbar .works .examples .technology {
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 700;
 }
 
 .navbar .works .examples:hover {
-    opacity: 3;
+    background-color: rgba(255,255,255,0.1);
     cursor: pointer;
 }
 
