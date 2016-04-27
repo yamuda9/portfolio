@@ -1,6 +1,7 @@
 var navbarState = 0; // 0 = hidden, 1 = shown
 var $currentMainContent = $('.main-content .main-title');
 var mainTitleShown = true;
+var $mainContentClass = "";
 
 var startState = function() {
     $('.navbar .works').hide();
@@ -73,12 +74,14 @@ $(window).ready(function() {
     });
     
     $('.navbar .works .examples').on("click", function() {
-        $currentMainContent.fadeOut("slow");
-        var $mainContentClass = $(this).data('main-class');
-        $currentMainContent = $('.main-content .' + $mainContentClass);
-        $('.main-content .' + $mainContentClass).fadeIn("slow");
-        $('.main-content .main-works-close').fadeIn("slow");
-        mainTitleShown = false;
+        if ($mainContentClass != $(this).data('main-class')) {
+            $currentMainContent.fadeOut("slow");
+            $mainContentClass = $(this).data('main-class');
+            $currentMainContent = $('.main-content .' + $mainContentClass);
+            $('.main-content .' + $mainContentClass).fadeIn("slow");
+            $('.main-content .main-works-close').fadeIn("slow");
+            mainTitleShown = false;
+        }
     });
     
     $('.main-content .main-works-container .main-works-close').on("click", function() {
