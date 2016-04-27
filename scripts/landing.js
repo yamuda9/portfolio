@@ -69,45 +69,11 @@ $(window).ready(function() {
         $('.main-content .main-title').fadeIn("slow");
     });
     
-    $('.navbar .works .examples .nav-bloc-jams').on("click", function() {
+    $('.navbar .works .examples img').on("click", function() {
         $currentMainContent.fadeOut("slow");
-        $currentMainContent = $('.main-content .main-bloc-jams');
-        $('.main-content .main-bloc-jams').fadeIn("slow");
-        $('.main-content .main-works-close').fadeIn("slow");
-    });
-    
-    $('.navbar .works .examples .nav-blocipedia').on("click", function() {
-        $currentMainContent.fadeOut("slow");
-        $currentMainContent = $('.main-content .main-blocipedia');
-        $('.main-content .main-blocipedia').fadeIn("slow");
-        $('.main-content .main-works-close').fadeIn("slow");
-    });
-    
-    $('.navbar .works .examples .nav-blocmetrics').on("click", function() {
-        $currentMainContent.fadeOut("slow");
-        $currentMainContent = $('.main-content .main-blocmetrics');
-        $('.main-content .main-blocmetrics').fadeIn("slow");
-        $('.main-content .main-works-close').fadeIn("slow");
-    });
-    
-    $('.navbar .works .examples .nav-bloccit').on("click", function() {
-        $currentMainContent.fadeOut("slow");
-        $currentMainContent = $('.main-content .main-bloccit');
-        $('.main-content .main-bloccit').fadeIn("slow");
-        $('.main-content .main-works-close').fadeIn("slow");
-    });
-    
-    $('.navbar .works .examples .nav-open-to-do-api').on("click", function() {
-        $currentMainContent.fadeOut("slow");
-        $currentMainContent = $('.main-content .main-open-to-do-api');
-        $('.main-content .main-open-to-do-api').fadeIn("slow");
-        $('.main-content .main-works-close').fadeIn("slow");
-    });
-    
-    $('.navbar .works .examples .nav-tdd-workflow').on("click", function() {
-        $currentMainContent.fadeOut("slow");
-        $currentMainContent = $('.main-content .main-tdd-workflow');
-        $('.main-content .main-tdd-workflow').fadeIn("slow");
+        var $mainContentClass = $(this).data('main-class');
+        $currentMainContent = $('.main-content .' + $mainContentClass);
+        $('.main-content .' + $mainContentClass).fadeIn("slow");
         $('.main-content .main-works-close').fadeIn("slow");
     });
     
