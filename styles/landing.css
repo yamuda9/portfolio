@@ -62,8 +62,10 @@
     color: rgba(255,255,255,0.8)
 }
 
-.main-content .main-about .main-about-close:hover {
+.main-content .main-about .main-about-close:hover,
+.main-content .main-works-container .main-works-close:hover {
     cursor: pointer;
+    color: red;
 }
 
 .main-content .main-about .main-about-bio {
@@ -110,10 +112,6 @@
     top: -248px;
     font-size: 20px;
     color: rgba(255,255,255,1)
-}
-
-.main-content .main-works-container .main-works-close:hover {
-    cursor: pointer;
 }
 
 .navbar {

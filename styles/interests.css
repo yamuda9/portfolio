@@ -1,9 +1,6 @@
-.main-content .main-about .ion-ios-game-controller-a-outline .ion-ios-game-controller-a-outline-text {
+.main-content .main-about .interests .interests-text {
     visibility: hidden;
-    width: 158px;
     top: 64%;
-    left: 13.3%;
-    margin-left: 79px;
     background-color: rgba(0,0,0,0.5);
     color: white;
     text-align: center;
@@ -13,310 +10,124 @@
     z-index: 1;
 }
 
-.main-content .main-about .ion-ios-game-controller-a-outline:hover .ion-ios-game-controller-a-outline-text {
-    visibility: visible;
+.main-content .main-about .ion-ios-game-controller-a-outline .ion-ios-game-controller-a-outline-text {
+    width: 158px;
+    left: 13.3%;
+    margin-left: 79px;
 }
 
 .main-content .main-about .ion-ios-americanfootball-outline .ion-ios-americanfootball-outline-text {
-    visibility: hidden;
     width: 146px;
-    top: 64%;
     left: 17.3%;
     margin-left: 73px;
-    background-color: rgba(0,0,0,0.5);
-    color: white;
-    text-align: center;
-    padding: 5px;
-    border-radius: 6px;
-    position: absolute;
-    z-index: 1;
-}
-
-.main-content .main-about .ion-ios-americanfootball-outline:hover .ion-ios-americanfootball-outline-text {
-    visibility: visible;
 }
 
 .main-content .main-about .ion-ios-baseball-outline .ion-ios-baseball-outline-text {
-    visibility: hidden;
     width: 162px;
-    top: 64%;
     left: 18%;
     margin-left: 81px;
-    background-color: rgba(0,0,0,0.5);
-    color: white;
-    text-align: center;
-    padding: 5px;
-    border-radius: 6px;
-    position: absolute;
-    z-index: 1;
-}
-
-.main-content .main-about .ion-ios-baseball-outline:hover .ion-ios-baseball-outline-text {
-    visibility: visible;
 }
 
 .main-content .main-about .ion-ios-basketball-outline .ion-ios-basketball-outline-text {
-    visibility: hidden;
     width: 168px;
-    top: 64%;
     left: 20%;
     margin-left: 84px;
-    background-color: rgba(0,0,0,0.5);
-    color: white;
-    text-align: center;
-    padding: 5px;
-    border-radius: 6px;
-    position: absolute;
-    z-index: 1;
-}
-
-.main-content .main-about .ion-ios-basketball-outline:hover .ion-ios-basketball-outline-text {
-    visibility: visible;
 }
 
 .main-content .main-about .ion-ios-musical-notes .ion-ios-musical-notes-text {
-    visibility: hidden;
     width: 112px;
-    top: 64%;
     left: 29%;
     margin-left: 56px;
-    background-color: rgba(0,0,0,0.5);
-    color: white;
-    text-align: center;
-    padding: 5px;
-    border-radius: 6px;
-    position: absolute;
-    z-index: 1;
-}
-
-.main-content .main-about .ion-ios-musical-notes:hover .ion-ios-musical-notes-text {
-    visibility: visible;
 }
 
 .main-content .main-about .ion-model-s .ion-model-s-text {
-    visibility: hidden;
     width: 50px;
-    top: 64%;
     left: 38.25%;
     margin-left: 25px;
-    background-color: rgba(0,0,0,0.5);
-    color: white;
-    text-align: center;
-    padding: 5px;
-    border-radius: 6px;
-    position: absolute;
-    z-index: 1;
-}
-
-.main-content .main-about .ion-model-s:hover .ion-model-s-text {
-    visibility: visible;
 }
 
 .main-content .main-about .ion-ios-monitor-outline .ion-ios-monitor-outline-text {
-    visibility: hidden;
     width: 94px;
-    top: 64%;
     left: 36.35%;
     margin-left: 47px;
-    background-color: rgba(0,0,0,0.5);
-    color: white;
-    text-align: center;
-    padding: 5px;
-    border-radius: 6px;
-    position: absolute;
-    z-index: 1;
-}
-
-.main-content .main-about .ion-ios-monitor-outline:hover .ion-ios-monitor-outline-text {
-    visibility: visible;
 }
 
 .main-content .main-about .ion-ios-film-outline .ion-ios-film-outline-text {
-    visibility: hidden;
     width: 150px;
-    top: 64%;
     left: 33%;
     margin-left: 75px;
-    background-color: rgba(0,0,0,0.5);
-    color: white;
-    text-align: center;
-    padding: 5px;
-    border-radius: 6px;
-    position: absolute;
-    z-index: 1;
-}
-
-.main-content .main-about .ion-ios-film-outline:hover .ion-ios-film-outline-text {
-    visibility: visible;
 }
 
 .main-content .main-about .ion-ios-camera-outline .ion-ios-camera-outline-text {
-    visibility: hidden;
     width: 100px;
-    top: 64%;
     left: 41%;
     margin-left: 50px;
-    background-color: rgba(0,0,0,0.5);
-    color: white;
-    text-align: center;
-    padding: 5px;
-    border-radius: 6px;
-    position: absolute;
-    z-index: 1;
-}
-
-.main-content .main-about .ion-ios-camera-outline:hover .ion-ios-camera-outline-text {
-    visibility: visible;
 }
 
 .main-content .main-about .ion-social-android-outline .ion-social-android-outline-text {
-    visibility: hidden;
     width: 74px;
-    top: 64%;
     left: 46.5%;
     margin-left: 37px;
-    background-color: rgba(0,0,0,0.5);
-    color: white;
-    text-align: center;
-    padding: 5px;
-    border-radius: 6px;
-    position: absolute;
-    z-index: 1;
-}
-
-.main-content .main-about .ion-social-android-outline:hover .ion-social-android-outline-text {
-    visibility: visible;
 }
 
 .main-content .main-about .ion-social-windows-outline .ion-social-windows-outline-text {
-    visibility: hidden;
     width: 78px;
-    top: 64%;
     left: 48.5%;
     margin-left: 39px;
-    background-color: rgba(0,0,0,0.5);
-    color: white;
-    text-align: center;
-    padding: 5px;
-    border-radius: 6px;
-    position: absolute;
-    z-index: 1;
-}
-
-.main-content .main-about .ion-social-windows-outline:hover .ion-social-windows-outline-text {
-    visibility: visible;
 }
 
 .main-content .main-about .ion-social-chrome-outline .ion-social-chrome-outline-text {
-    visibility: hidden;
     width: 114px;
-    top: 64%;
     left: 47.5%;
     margin-left: 57px;
-    background-color: rgba(0,0,0,0.5);
-    color: white;
-    text-align: center;
-    padding: 5px;
-    border-radius: 6px;
-    position: absolute;
-    z-index: 1;
-}
-
-.main-content .main-about .ion-social-chrome-outline:hover .ion-social-chrome-outline-text {
-    visibility: visible;
 }
 
 .main-content .main-about .ion-earth .ion-earth-text {
-    visibility: hidden;
     width: 84px;
-    top: 64%;
     left: 53.5%;
     margin-left: 42px;
-    background-color: rgba(0,0,0,0.5);
-    color: white;
-    text-align: center;
-    padding: 5px;
-    border-radius: 6px;
-    position: absolute;
-    z-index: 1;
-}
-
-.main-content .main-about .ion-earth:hover .ion-earth-text {
-    visibility: visible;
 }
 
 .main-content .main-about .ion-icecream .ion-icecream-text {
-    visibility: hidden;
     width: 84px;
-    top: 64%;
     left: 56%;
     margin-left: 42px;
-    background-color: rgba(0,0,0,0.5);
-    color: white;
-    text-align: center;
-    padding: 5px;
-    border-radius: 6px;
-    position: absolute;
-    z-index: 1;
-}
-
-.main-content .main-about .ion-icecream:hover .ion-icecream-text {
-    visibility: visible;
 }
 
 .main-content .main-about .ion-pizza .ion-pizza-text {
-    visibility: hidden;
     width: 52px;
-    top: 64%;
     left: 61.9%;
     margin-left: 26px;
-    background-color: rgba(0,0,0,0.5);
-    color: white;
-    text-align: center;
-    padding: 5px;
-    border-radius: 6px;
-    position: absolute;
-    z-index: 1;
-}
-
-.main-content .main-about .ion-pizza:hover .ion-pizza-text {
-    visibility: visible;
 }
 
 .main-content .main-about .ion-fork .ion-fork-text {
-    visibility: hidden;
     width: 112px;
-    top: 64%;
     left: 57.3%;
     margin-left: 56px;
-    background-color: rgba(0,0,0,0.5);
-    color: white;
-    text-align: center;
-    padding: 5px;
-    border-radius: 6px;
-    position: absolute;
-    z-index: 1;
-}
-
-.main-content .main-about .ion-fork:hover .ion-fork-text {
-    visibility: visible;
 }
 
 .main-content .main-about .ion-knife .ion-knife-text {
-    visibility: hidden;
     width: 112px;
-    top: 64%;
     left: 57.3%;
     margin-left: 56px;
-    background-color: rgba(0,0,0,0.5);
-    color: white;
-    text-align: center;
-    padding: 5px;
-    border-radius: 6px;
-    position: absolute;
-    z-index: 1;
 }
 
+.main-content .main-about .ion-ios-game-controller-a-outline:hover .ion-ios-game-controller-a-outline-text,
+.main-content .main-about .ion-ios-americanfootball-outline:hover .ion-ios-americanfootball-outline-text,
+.main-content .main-about .ion-ios-baseball-outline:hover .ion-ios-baseball-outline-text,
+.main-content .main-about .ion-ios-basketball-outline:hover .ion-ios-basketball-outline-text,
+.main-content .main-about .ion-ios-musical-notes:hover .ion-ios-musical-notes-text,
+.main-content .main-about .ion-model-s:hover .ion-model-s-text,
+.main-content .main-about .ion-ios-monitor-outline:hover .ion-ios-monitor-outline-text,
+.main-content .main-about .ion-ios-film-outline:hover .ion-ios-film-outline-text,
+.main-content .main-about .ion-ios-camera-outline:hover .ion-ios-camera-outline-text,
+.main-content .main-about .ion-social-android-outline:hover .ion-social-android-outline-text,
+.main-content .main-about .ion-social-windows-outline:hover .ion-social-windows-outline-text,
+.main-content .main-about .ion-social-chrome-outline:hover .ion-social-chrome-outline-text,
+.main-content .main-about .ion-earth:hover .ion-earth-text,
+.main-content .main-about .ion-icecream:hover .ion-icecream-text,
+.main-content .main-about .ion-pizza:hover .ion-pizza-text,
+.main-content .main-about .ion-fork:hover .ion-fork-text,
 .main-content .main-about .ion-knife:hover .ion-knife-text {
     visibility: visible;
 }
