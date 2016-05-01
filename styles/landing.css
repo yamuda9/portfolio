@@ -13,6 +13,7 @@
     text-shadow: 2px 2px 0px rgb(50,50,50);
     padding-left: 14px;
     background-color: rgba(0,0,0,0.15);
+    border: 10px solid white;
 }
 
 .main-content .main-title .main-title-name {
@@ -27,13 +28,17 @@
 
 .main-content .main-title .main-title-title {
     position: relative;
-    bottom: 89%;
+    bottom: 107%;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     font-size: 25px;
     letter-spacing: 14px;
+}
+
+.main-content .main-title:hover {
+    background-color: rgba(0,0,0,0.30);
 }
 
 .main-content .main-title:hover {
