@@ -1,6 +1,6 @@
-.main-content .main-about .interests .interests-text {
+.main-content .main-about .interests .interests-text,
+.main-content .main-social .social-text {
     visibility: hidden;
-    top: 64%;
     background-color: rgba(0,0,0,0.5);
     color: white;
     text-align: center;
@@ -8,6 +8,14 @@
     border-radius: 6px;
     position: absolute;
     z-index: 1;
+}
+
+.main-content .main-about .interests .interests-text {
+    top: 64%;
+}
+
+.main-content .main-social .social-text {
+    top: 99.5%;
 }
 
 .main-content .main-about .ion-ios-game-controller-a-outline .ion-ios-game-controller-a-outline-text {
@@ -112,6 +120,60 @@
     margin-left: 56px;
 }
 
+.main-content .main-social .ion-email .email-text {
+    width: 266px;
+    left: 2.5%;
+    margin-left: 133px;
+}
+
+.main-content .main-social .ion-social-github .github-text {
+    width: 86px;
+    left: 26.5%;
+    margin-left: 43px;
+}
+
+.main-content .main-social .ion-social-linkedin .linkedin-text {
+    width: 122px;
+    left: 27.5%;
+    margin-left: 61px;
+}
+
+.main-content .main-social .ion-social-twitter .twitter-text {
+    width: 120px;
+    left: 31.5%;
+    margin-left: 60px;
+}
+
+.main-content .main-social .ion-social-facebook .facebook-text {
+    width: 122px;
+    left: 36%;
+    margin-left: 61px;
+}
+
+.main-content .main-social .ion-social-instagram .instagram-text {
+    width: 86px;
+    left: 43.5%;
+    margin-left: 43px;
+}
+
+.main-content .main-social .ion-social-twitch .twitch-text {
+    width: 74px;
+    left: 49.5%;
+    margin-left: 37px;
+}
+
+.main-content .main-social .ion-steam .steam-text {
+    width: 74px;
+    left: 54.5%;
+    margin-left: 37px;
+}
+
+.main-content .main-social .ion-social-snapchat .snapchat-text {
+    width: 86px;
+    left: 58.5%;
+    margin-left: 43px;
+}
+
 .main-content .main-about .ion-ios-game-controller-a-outline:hover .ion-ios-game-controller-a-outline-text,
 .main-content .main-about .ion-ios-americanfootball-outline:hover .ion-ios-americanfootball-outline-text,
 .main-content .main-about .ion-ios-baseball-outline:hover .ion-ios-baseball-outline-text,
@@ -128,6 +190,15 @@
 .main-content .main-about .ion-icecream:hover .ion-icecream-text,
 .main-content .main-about .ion-pizza:hover .ion-pizza-text,
 .main-content .main-about .ion-fork:hover .ion-fork-text,
-.main-content .main-about .ion-knife:hover .ion-knife-text {
+.main-content .main-about .ion-knife:hover .ion-knife-text,
+.main-content .main-social .ion-email:hover .email-text,
+.main-content .main-social .ion-social-github:hover .github-text,
+.main-content .main-social .ion-social-linkedin:hover .linkedin-text, 
+.main-content .main-social .ion-social-twitter:hover .twitter-text, 
+.main-content .main-social .ion-social-facebook:hover .facebook-text, 
+.main-content .main-social .ion-social-instagram:hover .instagram-text, 
+.main-content .main-social .ion-social-twitch:hover .twitch-text, 
+.main-content .main-social .ion-steam:hover .steam-text, 
+.main-content .main-social .ion-social-snapchat:hover .snapchat-text {
     visibility: visible;
 }

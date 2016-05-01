@@ -34,6 +34,11 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    cursor: pointer;
+    color: rgba(255,255,255,0.75);
+}
+
 /* Medium and small screen (640px) */
 @media (min-width: 640px) {
     html { font-size: 112%; }
