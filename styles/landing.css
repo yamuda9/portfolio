@@ -38,11 +38,8 @@
 }
 
 .main-content .main-title:hover {
-    background-color: rgba(0,0,0,0.30);
-}
-
-.main-content .main-title:hover {
     cursor: pointer;
+    background-color: rgba(0,0,0,0.30);
 }
 
 .main-content .main-about {
