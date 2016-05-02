@@ -28,7 +28,7 @@
 
 .main-content .main-title .main-title-title {
     position: relative;
-    bottom: 107%;
+    top: -110%;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
